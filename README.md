@@ -7,7 +7,7 @@
 ![C++](https://img.shields.io/badge/C++-17-green?style=for-the-badge&logo=c%2B%2B)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-**为小智 Moji ESP32-S3 设备添加实时地址和天气显示功能**
+**为小智 Moji ESP32-S3 设备添加实时地址和天气显示功能，提供 Moon 同款表盘样式**
 
 [📖 功能特性](#功能特性) • [⚙️ 快速配置](#快速配置) • [🔧 安装指南](#安装指南) • [📊 API 信息](#api-服务信息) • [❓ 故障排除](#故障排除)
 
@@ -17,13 +17,14 @@
 
 ## 🚀 功能概述
 
-本项目将原有的农历显示功能升级为智能地址和天气显示系统，为小智 Moji ESP32-S3 设备提供：
+本项目将原有的农历显示功能升级为智能地址和天气显示系统，为小智 Moji ESP32-S3 设备提供 Moon 同款表盘样式：
 
 - 📍 **实时地址定位** - 基于腾讯地图 IP 定位 API
 - 🌤️ **实时天气信息** - 基于心知天气 API  
 - ⏰ **智能显示切换** - 15秒地址/20秒天气交替显示
 - 🔄 **自动更新机制** - 开机更新一次，后续每2小时自动更新
 - 🗺️ **内置城市数据库** - 包含3218个城市的精确坐标
+- 🎨 **Moon 表盘样式** - 采用与 Moon 设备相同的界面设计和显示风格
 
 ## ✨ 功能特性
 
@@ -47,6 +48,7 @@
 - ✅ **内存优化** - 城市数据库占用仅 369KB
 - ✅ **WiFi 检测** - 仅在网络连接时更新
 - ✅ **日志记录** - 详细的调试信息输出
+- ✅ **Moon 风格** - 采用与 Moon 设备一致的 UI 设计语言
 
 ## ⚙️ 快速配置
 
@@ -102,7 +104,7 @@ WeatherDisplay::SetApiKey("你的心知天气API密钥");
 
 ```
 main/boards/movecall-moji-esp32s3/
-├── 📄 movecall_moji_esp32s3.cc    # 主界面文件（修改）
+├── 📄 movecall_moji_esp32s3.cc    # 主界面文件（修改，Moon 风格）
 ├── 📄 location_display.h          # 地址显示模块头文件（新增）
 ├── 📄 location_display.cc         # 地址显示模块实现（新增）
 ├── 📄 weather_display.h           # 天气显示模块头文件（新增）
@@ -165,6 +167,7 @@ I (5689) WeatherDisplay: 构建城市名: 广东/深圳/南山
 | 🌐 **网络依赖** | 功能需要稳定的网络连接 |
 | 💾 **内存使用** | 城市坐标数据库占用约 369KB Flash 空间 |
 | ⏱️ **更新频率** | 建议不要过于频繁地更新数据以避免超出 API 限制 |
+| 🎨 **界面风格** | 采用 Moon 设备的表盘设计风格，保持视觉一致性 |
 
 ## 🤝 贡献指南
 
@@ -184,7 +187,7 @@ I (5689) WeatherDisplay: 构建城市名: 广东/深圳/南山
 
 **🌟 如果这个项目对你有帮助，请给它一个 Star！**
 
-Made with ❤️ for xiaozhi
+Made with ❤️ for xiaozhi • Moon 风格表盘
 
 </div>
 
