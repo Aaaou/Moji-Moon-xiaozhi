@@ -17,7 +17,5 @@ main/mmap_generate_emoji.h
 *.pyc
 *.bin
 
-# 测试文件夹
-test_*/
-*_test.py
-test_*.py
+test/
+test*.py
