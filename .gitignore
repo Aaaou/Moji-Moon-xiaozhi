@@ -17,5 +17,15 @@ main/mmap_generate_emoji.h
 *.pyc
 *.bin
 
+# 测试文件夹和文件
 test/
-test*.py
+test_*/
+*_test.py
+test_*.py
+*.CC
+*测试*
+*v0.*
+*v1.*
+*主题*
+*完成*
+*bug*
